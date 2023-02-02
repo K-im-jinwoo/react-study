@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 class Try extends Component {
   render() {
+    const { tryInfo } = this.props;
     return (
-      <li>
-        <b>{this.props.value.fruit}</b> - {this.props.index}
-      </li>
-    )
+      <>
+        <div>{tryInfo.try}</div>
+        <div>{tryInfo.result}</div>
+      </>
+    );
   }
 }
 export default Try;
